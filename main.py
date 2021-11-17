@@ -4,7 +4,7 @@ def display(generations, max_fitness, mutation_rate, fittest_person):
     print(f'Generations = {generations} | Max Fitness = {max_fitness} | Mutation rate = {mutation_rate} | Fittest person = {fittest_person}')
 
 #Create population.
-target = 'To be or not be.'
+target = input("Sentence to be generated: ")
 population = Population(200, target, 1)
 population.random_dna()
 
